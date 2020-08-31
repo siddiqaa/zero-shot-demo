@@ -45,6 +45,10 @@ model_ids = {
     'XLM Roberta XNLI (cross-lingual)': 'joeddav/xlm-roberta-large-xnli'
 }
 
+model_ids = {
+    'Bart MNLI + Yahoo Answers': 'joeddav/bart-large-mnli-yahoo-answers',
+}
+
 device = 0 if torch.cuda.is_available() else -1
 
 @st.cache(allow_output_mutation=True)
